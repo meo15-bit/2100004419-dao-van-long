@@ -115,7 +115,7 @@ footer {
 
 .fade-in {
     opacity: 0;
-    animation: fadeIn 1.5s ease-in forwards;
+    animation: fadeIn 1s ease-in forwards;
 }
 
 /* Hiệu ứng zoom-in cho hình ảnh */
