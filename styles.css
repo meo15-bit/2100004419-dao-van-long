@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #f71a1a;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    color: #81f523;
+    text-decoration: none;
+    padding:  5px 10px; /* Thêm padding để tăng kích thước nhấp */
+    transition: background-color 0.3s ease, color 0.3s ease, text-decoration 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+nav a.active {
+    background-color: #f71a1a; /* Màu nền khi liên kết được chọn */
+    color: #fff; /* Màu chữ khi liên kết được chọn */
+    border-radius: 5px; /* Bo tròn góc cho nền */
+    text-decoration: underline; /* Gạch chân liên kết được chọn */
+}
+
+main {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.left-aside {
+    width: 25%;
+    padding: 10px;
+    background-color: #78fade6c;
+    border: 2px solid #000000;
+    margin-right: 25px;
+}
+.right-aside {
+    width: 25%;
+    padding: 10px;
+    background-color: #78fade6c;
+    border: 2px solid #000000;
+    margin-left: 25px;
+}
+
+.content {
+    width: 50%;
+    padding: 10px;
+}
+
+.left-aside img {
+    width: 150px;
+    border-radius: 50%;
+    height: auto;
+}
+
+.right-aside, .item {
+    background-color: #78fade6c;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #81f523;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.avatar :hover {
+    justify-content: center;
+    transform: scale(1.1);
+}
+.left-aside.avatar {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: auto;
+}
+/* Hiệu ứng fade-in cho các phần tử khi cuộn trang */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Hiệu ứng zoom-in cho hình ảnh */
+@keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.zoom-in {
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* Hiệu ứng slide-in từ dưới lên */
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-up {
+    animation: slideUp 1s ease-out;
+}
+
